@@ -9,16 +9,16 @@
         <module name="BSFMS" />
         <module name="HiAccountsSASS" />
         <module name="HiSASS" />
-        <module name="hotel" />
         <module name="spring-data-rest-angular" />
+        <module name="task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BSFMS" target="1.8" />
       <module name="HiAccountsSASS" target="1.8" />
       <module name="HiSASS" target="1.8" />
-      <module name="hotel" target="1.8" />
       <module name="spring-data-rest-angular" target="1.8" />
+      <module name="task" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

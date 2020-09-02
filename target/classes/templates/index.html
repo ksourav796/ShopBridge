@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Shop Bridge</title>
+<title>Task Master</title>
 <link href='./css/style.css' rel="stylesheet" type="text/css" />
 <link href='./css/css/font-awesome.css' rel="stylesheet" type="text/css" />
 	<link href='./css/vendors/bootstrap-datetimepicker.min.css' rel="stylesheet" type="text/css" />
@@ -10,15 +10,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 	<link href="css/login.css" rel="stylesheet" type="text/css" />
 	<link href='./css/vendors/bootstrap.min.css' rel="stylesheet" type="text/css" />
-<!--<title>HiAccounts</title>-->
 	</head>
 <body>
 <div class="generic-container">
 	<h2>
 		<div id="logo"><a href="index.html"  title="Home">
-			<img src="resource/images/shopping.jpg" style="width:5%;"/>
-		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop Bridge
-			<!--<a  href="#!/login" id="logoutButton" style="font-size:15px;color:white;float:right;">LOGOUT <i class="fa fa-sign-out"></i></a>-->
+			<img src="resource/images/taskImage.jpg" style="width:5%;"/>
+		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Task Master
+			<a  href="#!/login" id="logoutButton" style="font-size:15px;color:white;float:right;">LOGOUT <i class="fa fa-sign-out"></i></a>
 		</div>
 
 	</h2>
@@ -28,11 +27,11 @@
 	<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 		<div id="nav_side_menu" class="menu_section">
 			<ul class="nav side-menu">
-				<li id="bookings">
-					<a id="bookingsLink" href="#!/items"  tabindex="-1"> <i class="fa fa-list-alt" style="font-size:20px;color:#3c8dbc;" aria-hidden="true"></i><span>  Save Item  </span></a>
+				<li id="taskMaster">
+					<a id="taskLink" href="#!/TaskMaster"  tabindex="-1"> <i class="fa fa-list-alt" style="font-size:20px;color:#3c8dbc;" aria-hidden="true"></i><span> Task Master  </span></a>
 				</li>
-				<li id="checkIn">
-					<a id="checkInLink" href="#!/checkIn"  tabindex="-1"> <i class="fa fa-list-alt" style="font-size:20px;color:#3c8dbc;" aria-hidden="true"></i><span>  CheckIn  </span></a>
+				<li id="users">
+					<a id="userLink" href="#!/users"  tabindex="-1"> <i class="fa fa-list-alt" style="font-size:20px;color:#3c8dbc;" aria-hidden="true"></i><span> Users List  </span></a>
 				</li>
 
 			</ul>
@@ -41,10 +40,7 @@
 </div>
 
 <div ng-view="true"></div>
-<!--<script>-->
-<!--var PAGE_NAME = '<%out.print(request.getAttribute("pageName"));%>'-->
-<!--</script>-->
-<!-- JQuery -->
+
 <script src="./js/vendors/jquery.min.js"></script>
 <!-- Jquery UI Scripts -->
 <script src="./js/vendors/jquery-ui.js"></script>
@@ -88,8 +84,11 @@
 <script  src="./js/custom.js"></script>
 <script src="./js/bootstrap-wysiwyg.js"></script>
 <script src="./js/jquery.hotkeys.js"></script>
-<script src="./js/controller/checkIn.js"></script>
-<script src="./js/controller/items.js"></script>
+<script src="./js/controller/login.js"></script>
+<script src="./js/controller/users.js"></script>
+<script src="./js/controller/dashboard.js"></script>
+<script src="./js/controller/Task.js"></script>
+
 <script type="text/javascript" src="./js/controller/numberToWord.js"></script>
 </body>
 </html>

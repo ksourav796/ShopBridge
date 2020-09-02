@@ -40,12 +40,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return DataSourceBuilder.create().build();
     }
 
-//    @Override
-//    @Bean
-//    public AuthenticationManager authenticationManagerBean() throws Exception {
-//        DatabasePopulatorUtils.execute(createDatabasePopulator(),dataSource());
-//        return super.authenticationManagerBean();
-//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

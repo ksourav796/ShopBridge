@@ -18,7 +18,7 @@ public class HomeController {
 			else {
 				model.addAttribute("pageName", "dashboard");
 			}
-//			basicDataService.insertBasicData();
+
 		return "index";
 	}
 }
